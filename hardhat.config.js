@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@tovarishfin/hardhat-yul");
 require("dotenv").config();
 
 module.exports = {
