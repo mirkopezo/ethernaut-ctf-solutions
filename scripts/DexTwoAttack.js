@@ -33,9 +33,6 @@ async function main() {
 
   tx = await instance.swap(contract.address, TOKEN2, 200);
   await tx.wait();
-
-  console.log(await instance.balanceOf(TOKEN1, instanceAddress));
-  console.log(await instance.balanceOf(TOKEN2, instanceAddress));
 }
 
 main().catch((error) => {
