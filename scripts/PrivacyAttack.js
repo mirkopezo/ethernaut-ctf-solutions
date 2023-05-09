@@ -3,7 +3,7 @@ const { ethers } = require("hardhat");
 async function main() {
   const instanceAddress = "0xF68b5b4F3cEF71be1B4c229d0032182e69Aae065";
 
-  const [attacker, user] = await ethers.getSigners();
+  const [attacker] = await ethers.getSigners();
   console.log("Using this address for attack:", attacker.address);
 
   const Contract = await ethers.getContractFactory("Privacy");
