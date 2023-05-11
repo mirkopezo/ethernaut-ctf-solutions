@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
+    "openzeppelin-contracts-06": "npm:@openzeppelin/contracts@3.4.2",
     "@tovarishfin/hardhat-yul": "^3.0.5"
   }
 }
